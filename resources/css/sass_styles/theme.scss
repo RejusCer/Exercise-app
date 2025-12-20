@@ -1,0 +1,41 @@
+.center-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.primary-button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: white;
+        color: blue;
+        cursor: pointer;
+    }
+}
