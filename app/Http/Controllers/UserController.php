@@ -23,11 +23,19 @@ class UserController extends Controller
     }
 
     /**
+     * return register view
+     */
+    public function register()
+    {
+        return view('auth.register');
+    }
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
@@ -66,7 +74,7 @@ class UserController extends Controller
     {
         $request->validate([
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6',
+            'password' => 'required|min:4',
         ]);
 
         dd("Hello");
