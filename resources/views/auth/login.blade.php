@@ -1,13 +1,14 @@
 
-@extends('layouts.main')
+@extends('layouts.auth')
 
+@section('content')
 <div class="center-block py-[40px]">
     <div class="login-container">
         <h1>
-            <div class="text-[22px]">Login form</div>
+            <div class="text-[22px]">Prisijungimo forma</div>
         </h1>
 
-        <form class="mt-[16px]" action="{{ route('users.login') }}" method="GET">
+        <form class="mt-[16px]" action="{{ route('users.login') }}" method="POST">
             @csrf
 
             <div class="input-holder">
@@ -36,5 +37,7 @@
         </form>
     </div>
 </div>
+@endsection
+
 
 

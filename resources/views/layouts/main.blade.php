@@ -11,9 +11,28 @@
     @endif
 
 </head>
-<body>
-    @section('content')
+<body class="main-layout">
+    <header class="flex justify-between items-center p-4 pb-10">
+        <div>
+
+        </div>
+        <div class="flex flex-row align-center items-center gap-4 ">
+            <div>
+                Sveikas, {{ Auth::user()->name }}
+            </div>
+            @if (session('success'))
+                <p>{{ session('success') }}</p>
+            @endif
+
+            <form action="{{ route('users.logout') }}" method="POST">
+                @csrf
+                <button type="submit" class="link-button">Atsijungti</button>
+            </form>
+        </div>
+    </header>
+
+    <div>
         @yield('content')
-    @endsection
+    </div>
 </body>
 </html>

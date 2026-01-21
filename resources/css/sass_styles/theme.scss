@@ -1,3 +1,7 @@
+$dark: #16171B;
+$gray: #c0c0c0;
+
+
 .center-block{
     display: flex;
     justify-content: center;
@@ -38,4 +42,20 @@ h3{
         color: blue;
         cursor: pointer;
     }
+}
+
+.link-button{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    color: white;
+
+    &:hover{
+        color: $gray;
+    }
+}
+
+
+.main-layout{
+    background-color: $dark;
+    color: $gray;
 }
