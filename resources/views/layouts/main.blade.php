@@ -14,7 +14,7 @@
 <body class="main-layout">
     <header class="flex justify-between items-center p-4 pb-10">
         <div>
-
+            <h1>Dashboard</h1>
         </div>
         <div class="flex flex-row align-center items-center gap-4 ">
             <div>

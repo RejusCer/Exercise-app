@@ -1,11 +1,30 @@
-$dark: #16171B;
-$gray: #c0c0c0;
+@use 'variables.scss';
+
+.exe-gray-bg{
+    background-color: variables.$gray;
+}
+
+.exe-gray-border{
+    border-color: variables.$gray;
+}
+
+.exe-dark-gray-bg{
+    background-color: variables.$dark-gray;
+}
+
+.exe-red-text{
+    color: variables.$red;
+}
 
 
 .center-block{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1, h2, h3, h4, h5{
+    line-height: 1;
 }
 
 h1{
@@ -20,12 +39,22 @@ h2{
 }
 
 h3{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
 }
 
-h3{
-    font-size: 26px;
+h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h6{
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -45,17 +74,29 @@ h3{
 }
 
 .link-button{
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
     cursor: pointer;
     color: white;
 
     &:hover{
-        color: $gray;
+        color: variables.$gray;
+    }
+}
+
+.link-box-button{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 2px solid variables.$dark-gray;
+    border-radius: 4px;
+    padding: 4px 8px;
+
+    &:hover{
+        border-color: white;
     }
 }
 
 
 .main-layout{
-    background-color: $dark;
-    color: $gray;
+    background-color: variables.$dark;
+    color: variables.$gray;
 }

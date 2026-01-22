@@ -1,0 +1,24 @@
+@use 'variables.scss';
+
+.exercise-day-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .exercise-day-item{
+        min-height: 140px;
+        width: 100%;
+        background-color: variables.$dark-gray;
+        border-radius: 8px;
+        padding: 24px;
+        position: relative;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+
+        &:hover{
+            border-color: variables.$red;
+        }
+    }
+}
+
