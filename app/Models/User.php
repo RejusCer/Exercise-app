@@ -46,4 +46,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function exerciseDays(){
+        return $this->belongsToMany(ExerciseDay::class, 'user_exercise_days')->using(User_ExerciseDay::class); // ->withPivot(['week_days])
+    }
 }
