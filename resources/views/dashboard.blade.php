@@ -52,7 +52,7 @@
 <div class="modal-container">
     <div class="modal-cover"></div>
     <div class="modal-content">
-        labas
+        labass
     </div>
 </div>
 @endsection
