@@ -12,4 +12,8 @@ class ExerciseDayController extends Controller
 
         return view('dashboard', compact('exercise_day_plans'));
     }
+
+    public function store(Request $request){
+
+    }
 }
