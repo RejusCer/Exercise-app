@@ -7,7 +7,7 @@
         <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 w-full justify-between">
             <div class="w-full lg:w-[30%] lg:pr-[24px]">
                 <div class="border-[1px] exe-gray-border rounded-[8px] p-[24px]">
-                    <span class="link-box-button">Pridėti pratimų planų</span>
+                    <span id="modal-btn-1" class="link-box-button">Pridėti pratimų planų</span>
                 </div>
             </div>
             <div class="w-full lg:w-[70%]">
@@ -49,10 +49,10 @@
 </div>
 
 {{-- modal --}}
-<div class="modal-container">
-    <div class="modal-cover"></div>
+<div id="modal-container-1" class="modal-container hide">
+    <div id="modal-exit-1" class="modal-cover"></div>
     <div class="modal-content">
-        labass
+        modal
     </div>
 </div>
 @endsection

@@ -7,7 +7,7 @@
     <title>Document</title>
 
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/css/app.scss'])
+        @vite(['resources/css/app.css', 'resources/css/app.scss', "resources/js/app.js"])
     @endif
 
 </head>
