@@ -58,8 +58,6 @@ class UserController extends Controller
 
         // return user to dashboard
         return redirect('/dashboard')->with('success', 'Sveiki susikūrę paskyrą');
-
-        dd($request);
     }
 
     /**

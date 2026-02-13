@@ -16,8 +16,10 @@ Route::get('/register', [UserController::class, 'register'])->name('users.regist
 Route::post('/register', [UserController::class, 'store'])->name('users.register');
 
 Route::middleware(['auth'])->group(function () {
+    Route::post('/logout', [UserController::class, 'logout'])->name('users.logout');
+
     Route::get('/dashboard', [ExerciseDayController::class, 'index'])->name('dashboard');
 
-    Route::post('/logout', [UserController::class, 'logout'])->name('users.logout');
+    Route::post('/dashboard/add-new-exercise-day', [ExerciseDayController::class, 'store'])->name('exerciseDay.store');
 });
 

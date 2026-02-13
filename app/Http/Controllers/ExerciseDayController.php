@@ -14,6 +14,14 @@ class ExerciseDayController extends Controller
     }
 
     public function store(Request $request){
+        $request->validate([
+            "name" => "required|string|max:255",
+        ]);
 
+        $exerciseDay = ExerciseDay::create([
+            'name' => $request->name,
+        ]);
+
+        return redirect()->route('dashboard')->with('success', 'Pratimo dienos planas sėkmingai sukurtas!');
     }
 }
